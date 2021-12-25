@@ -1,6 +1,15 @@
+import platform
 import ctypes
 
-wt = ctypes.cdll.LoadLibrary("libwooting-rgb-sdk.dylib")
+pname = platform.uname()[0]
+if pname == "Windows":
+    suffix = ".dll"
+elif pname == "Linux":
+    suffix = ".so"
+else:
+    suffix = ".dylib"
+
+wt = ctypes.cdll.LoadLibrary("libwooting-rgb-sdk"+suffix)
 
 
 WOOTING_ROW_COUNT = 6
