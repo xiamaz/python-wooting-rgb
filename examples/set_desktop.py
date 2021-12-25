@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 import sys
-import wooting_rgb_wrapper
+from wooting_rgb import wooting_rgb_wrapper
 
 active_color = (255, 0, 0)
 
