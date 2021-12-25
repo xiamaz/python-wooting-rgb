@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+"""Show the currently active desktop with a red key on the number row.
+"""
 import sys
 from wooting_rgb import wooting_rgb_wrapper
 
